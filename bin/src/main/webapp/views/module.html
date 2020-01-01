@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="moduleModule">
+<head>
+    <meta charset="UTF-8">
+
+    <title>module analysis</title>
+    <!--<link rel="stylesheet" href="externalJS/ng-tags-input.bootstrap.min.css" />-->
+    <link rel="stylesheet" href="externalJS/ng-tags-input.min.css" />
+    <script type="text/javascript" src="angularJS/angular.js">
+    </script>
+    <script type="text/javascript" src="module.js"></script>
+    <script type="text/javascript" src="myModule.js"></script>
+    <script type="text/javascript" src="externalJS/ng-tags-input.min.js"></script>
+</head>
+
+<body>
+        <div ng-controller="mymoduleController">
+            <p ng-bind="helloMessage"></p>
+        </div>
+
+        <div ng-controller="externalController">
+            <tags-input ng-model="tags"></tags-input>
+        </div>
+
+</body>
+</html>

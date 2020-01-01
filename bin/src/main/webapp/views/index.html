@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="indexModule">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script type="text/javascript" src="angularJS/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <title>ngModel Examples</title>
+</head>
+
+<body ng-controller="indexController">
+    <h2>ngModel Examples App</h2>
+    <p> Text input:<input type="text" ng-model="textString"></p>
+    <p> CheckBox:<input type="checkbox" ng-model="booleanValue"></p>
+    <p>Date: <input type="date" ng-model="DateValue"></p>
+
+        Radio:
+    <p>
+         <input type="radio" ng-model="radioValue" value="opt1">option1
+         <input type="radio" ng-model="radioValue" value="opt2">option2
+         <input type="radio" ng-model="radioValue" value="opt3">option3
+    </p>
+
+
+    </p>
+    <div>
+        <p>Text input:{{textString}}</p>
+        <p>Check input:{{booleanValue}}</p>
+        <p>Date input:{{DateValue}}</p>
+        <p>Radio input:{{radioValue}}</p>
+    </div>
+</body>
+</html>

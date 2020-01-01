@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="moreModule">
+<head>
+    <meta charset="UTF-8">
+    <title>more.html</title>
+    <script type="text/javascript" src="angularJS/angular.js">
+
+    </script>
+    <script type="text/javascript" src="more.js"></script>
+</head>
+
+<body>
+        <h1>More Directives App</h1>
+        <div ng-controller="moreController">
+            <div ng-repeat="i in myList">
+                <p >Element: {{$index}}</p>
+                <p>First :{{$first}}</p>
+                <p>Even:{{$even}}</p>
+                <p>Middle: {{$middle}}</p>
+                <p>Name: {{i.name}}</p>
+                <p>Age: {{i.age}}</p>
+            </div>
+        </div>
+        <div ng-controller="secondController">
+            <input type="text" ng-model="userName">
+            Your input is: <p ng-bind="userName"></p>
+        </div>
+
+</body>
+</html>

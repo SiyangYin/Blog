@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nestedController">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock.app</title>
+    <script src="angularJS/angular.js"></script>
+    <script src="clock.js"></script>
+</head>
+<body>
+        <!--<h1>Clock app</h1>-->
+        <!--<div ng-controller="clockController">-->
+            <!--Please enter your name:<input ng-model="userName" type="text">-->
+            <!--<p>your name is:{{userName}}</p>-->
+            <!--<p>{{timeString}}</p>-->
+            <!--<button ng-click="getTime()">click to get current time</button>-->
+        <!--</div>-->
+        <!--<hr>-->
+        <!--<div ng-controller="anotherController">-->
+            <!--<h1>ngModel examples</h1>-->
+                <!--<p> textbox:<input type="text" ng-change="textboxChange()" ng-model="textString"></p>-->
+                <!--<p> textbox:<input type="text" ng-change="textboxChange()" ng-model="textString"></p>-->
+                <!--<p> textbox:<input type="text" ng-change="textboxChange()" ng-model="textString"></p>-->
+                <!--<p> textbox:<input type="text" ng-change="textboxChange()" ng-model="textString"></p>-->
+                <!--<p> textbox:<input type="text" ng-change="textboxChange()" ng-model="textString"></p>-->
+                <!--<p> textbox:<input type="text" ng-change="textboxChange()" ng-model="textString"></p>-->
+            <!---->
+                <!--<p> checkbox:<input type="checkbox" ng-model="booleanValue"></p>-->
+                <!--<p> date: <input type="date" ng-model="date"></p>-->
+                <!--<p> radio:-->
+                    <!--<input type="radio" ng-model="radioValue" value="opt1">option1-->
+                    <!--<input type="radio" ng-model="radioValue" value="opt2">option2-->
+                    <!--<input type="radio" ng-model="radioValue" value="opt3">option3-->
+                <!--</p>-->
+            <!--<div>-->
+                <!--<p>text input:{{textString}}</p>-->
+                <!--<p>checkbox input:{{booleanValue}}</p>-->
+                <!--<p>date input:{{date}}</p>-->
+                <!--<p>raido value:{{radioValue}}</p>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <hr>
+        <h1>Nested controllers </h1>
+        <div ng-controller="controller1 as c1">
+            <p>{{c1.testProp}}</p>
+            <div ng-controller="controller2 as c2">
+                <p>{{c2.testProp}}</p>
+            </div>
+        </div>
+
+
+
+</body>
+</html>
